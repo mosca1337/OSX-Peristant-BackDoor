@@ -1,5 +1,6 @@
 # OSX-Peristant-BackDoor
 
+Take full control of a OSX user or root account via command line.
 Here is a tutorial of this backdoor for OSX: http://patrickmosca.com/osx-persistent-backdoor/
 
 1. Edit `connect.sh` with your publically visible sever ip address and port.
